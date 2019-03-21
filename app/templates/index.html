@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>{{title}}</title>
+  </head>
+  <body>
+      <h1>Калькулятор польской нотации</h1>
+        <form action="" method="post" name="data">
+    {{form.hidden_tag()}}
+    </p>Введите выражение:
+    <p>{{form.equation_field}}</p>
+    <p><input type="submit" value="Вычислить"></p>
+    </p>Результат:
+    <p>{{form.result_field}}</p>
+    </p>Ошибки:
+    <p>{{form.errors_field}}</p>
+        </form>
+  </body>
+</html>
