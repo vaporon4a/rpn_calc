@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 #!venv/bin/python
-=======
-#!venv/bin/python3
->>>>>>> 3154d0c51705b23759b09e5f882c24a6f857f0ec
 from app import app
 import os
 

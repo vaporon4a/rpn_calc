@@ -18,10 +18,8 @@ def index():
     if form.validate_on_submit():
         rpn.clear()
         rpn.push(form.equation_field.data)
-        if not rpn.errors:
-            form.result_field.data = rpn.get_status()
-        else:
-            form.errors_field.data = rpn.errors
+        form.result_field.data = rpn.get_status()
+        form.errors_field.data = rpn.errors
     return render_template('index.html', 
         title = u'RPN калькулятор',
         form = form)
