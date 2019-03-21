@@ -3,6 +3,6 @@ from wtforms import StringField, TextAreaField
 from wtforms.validators import Length
 
 class DataForm(FlaskForm):
-    equation_field = StringField('Equation', validators=[Length(min=3)])
+    equation_field = StringField('Equation', validators=[Length(min=5)])
     result_field = StringField('Result', validators=[])
     errors_field = TextAreaField('Errors', validators=[])

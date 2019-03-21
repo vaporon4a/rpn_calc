@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template
 from app.forms import DataForm
 from app.rpn import Rpn
 import time
